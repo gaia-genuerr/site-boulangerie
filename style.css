@@ -1,0 +1,144 @@
+@import url(https://db.onlinewebfonts.com/c/01a1cdebb8bf5b8573622fa6f689369c?family=Vladimir+Script+V1);
+
+html{
+    scroll-behavior: smooth;
+    background-color: rgba(255, 181, 181, 0.231);
+}
+
+html, body {
+    margin: 0;
+    padding: 0;
+}
+
+
+.container {
+	width: 700px;
+	margin: 80px auto;
+    font-family: 'Roboto', sans-serif;
+    color: rgb(30, 30, 30);
+}
+
+h2{
+    text-align: center;
+    margin: 40px;
+}
+.banner {
+    background-image: linear-gradient(-225deg, rgba(0,0,0,0.8) 0%, rgba(0,0,0,0.2) 50%), url(./images/boulangerie.jpg);
+    background-size: cover;
+    background-position: center;
+    color: white;
+    padding: 150px 0px;
+    text-align: center;
+}
+
+#title-boulangerie{
+    font-family: "Vladimir Script V1";
+    font-size: 50px;
+    text-shadow: 2px 2px 4px rgba(29, 29, 29, 0.9);
+    
+}
+
+#visites-boulangerie > div > h2{
+    font-family: 'Roboto', sans-serif;
+}
+
+a {
+    color: inherit;
+    text-decoration: none;
+}
+
+.cards{
+    display: flex;
+    flex-direction: line;
+    flex-wrap: wrap;
+    justify-content: space-around; /* Répartit les éléments uniformément avec de l'espace autour d'eux */
+    align-items: center; /* Centre les éléments verticalement */
+}
+
+.cards a {
+    flex: 1; /* Each child div will grow equally */
+    max-width: calc(33.333% - 10px); /* Optional: Max width for each image, accounting for gap */
+    box-sizing: border-box; /* Include padding and border in the element's total width */
+    display: flex;
+    flex-wrap: wrap;
+    text-align: center; /* Centre le texte à l'intérieur de chaque élément <a> */
+    margin: 10px; /* Ajoute un peu d'espace autour de chaque élément <a> */
+}
+
+.cards img {
+    width: 100%; /* Make the image responsive */
+    height: auto; /* Maintain aspect ratio */
+    object-fit: cover; /* Cover the area of div without stretching the image */
+}
+
+.banner h1 {
+    color: white;
+    font-size: 30px;
+    font-weight: lighter;
+    opacity: 0.8;
+    text-align: center;
+    font-family: 'Roboto', sans-serif;
+    text-shadow: 2px 2px 4px rgba(29, 29, 29, 0.9);
+}
+
+.button-blue{
+    font-family: 'Roboto', sans-serif;
+    background-color: #575db4;
+    color: white;
+    padding: 10px 15px;
+    border-radius: 4px;
+    transition: background-color 0.3s ease;
+}
+
+.button-blue:hover{
+    background-color: #1E4D92;
+    cursor: pointer;
+}
+
+.button-neutral{
+    font-family: 'Roboto', sans-serif;
+    background-color: #ff2d2d4f;
+    padding: 10px 15px;
+    border-radius: 4px;
+    transition: background-color 0.3s ease;
+}
+
+.button-neutral:hover{
+    background-color: #ff2f2f3e;
+    cursor: pointer;
+}
+
+@media (min-width: 961px){
+    #title-boulangerie{
+        font-size: 90px;
+      }
+}
+
+@media (max-width: 960px) {
+  /* For a screen < 960px, this CSS will be read */
+  .container {
+    width: 700px;
+  }
+  #title-boulangerie{
+    font-size: 65px;
+  }
+}
+
+@media (max-width: 750px) {
+  /* For a screen < 750px, this CSS will be read */
+  .container {
+    width: 500px;
+  }
+  #title-boulangerie{
+    font-size: 50px;
+  }
+}
+@media (max-width: 540px) {
+  /* For a screen < 540px, this CSS will be read */
+  .container {
+    width: 300px;
+  }
+  #title-boulangerie{
+    font-size: 30px;
+  }
+}
